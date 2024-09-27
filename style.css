@@ -23,7 +23,8 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(19, 19, 19);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
 .Join {
@@ -34,7 +35,7 @@ header {
   border-radius: 0.7rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: rgb(228, 228, 228);
+  color: rgb(19, 19, 19);
   font-weight: 600;
   margin-right: 1rem;
   text-align: center;
@@ -47,8 +48,9 @@ header {
 }
 
 .nav {
-  color: white;
   color: rgb(255, 80, 80);
+  color: white;
+
   text-decoration: none;
   position: relative; /* Gör .nav relativt positionerad */
 }
@@ -75,14 +77,15 @@ svg {
   height: 2px;
   background-color: #242424;
   transition: width 0.3s ease;
+  background-color: #cbcbcb;
 }
 .nav.hover::before {
   width: 100%;
 }
 
 .fab {
-  color: white;
   color: rgb(255, 80, 80);
+  color: white;
   font-size: 1.2rem;
 }
 .fab.fa-linkedin:hover {
@@ -95,7 +98,7 @@ svg {
   margin-left: 0.5rem;
 }
 .intro {
-  background: linear-gradient(90deg, rgb(255, 85, 85), rgb(85, 195, 255));
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(85, 195, 255));
   width: 100%;
   height: 100vh;
   display: flex;
@@ -108,19 +111,22 @@ svg {
   background: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
+  background: linear-gradient(black, rgb(52, 52, 52));
+  color: white;
 }
 .end {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(90deg, rgb(85, 195, 255), rgb(255, 85, 85));
+  background: linear-gradient(90deg, rgb(255, 85, 85), black);
 }
 .end.dark-end {
-  background: linear-gradient(90deg, rgb(255, 85, 85), black);
+  background: linear-gradient(90deg, rgb(85, 195, 255), rgb(255, 85, 85));
 }
 hr {
   height: 1.5rem;
   /* border-color: rgb(187, 42, 42); */
   border-color: rgb(255, 80, 80);
+  border-color: white;
 }
 .home {
   width: 80%;
@@ -146,14 +152,10 @@ h2 {
   margin-left: 1.2rem;
 }
 span {
-  color: rgb(187, 42, 42);
-  color: rgb(255, 221, 0);
+  color: rgb(255, 79, 79);
 }
 span.dark-span {
   color: rgb(255, 221, 0);
-  color: rgb(187, 42, 42);
-  color: rgb(129, 21, 21);
-  color: rgb(255, 79, 79);
 }
 .paragraf-intro {
   padding: 4rem;
@@ -185,17 +187,17 @@ span.dark-span {
   margin-right: 1rem;
   margin-top: 0.4rem;
   border: none;
-  background: white;
   font-size: 1rem;
-  color: rgb(0, 0, 0);
+  color: white;
+  background-color: rgb(19, 19, 19);
 }
 #Lamp:hover {
   cursor: pointer;
   color: rgb(255, 95, 95);
 }
 #Lamp.active {
-  color: white;
-  background-color: rgb(19, 19, 19);
+  color: rgb(0, 0, 0);
+  background: white;
 }
 #Lamp.active:hover {
   color: rgb(255, 95, 95);
@@ -203,24 +205,30 @@ span.dark-span {
 #sticky-header.dark-header {
   background-color: rgb(19, 19, 19);
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
 }
 .nav.dark-nav {
   color: white;
+  color: rgb(255, 80, 80);
 }
 .nav.dark-nav::before {
   background-color: #cbcbcb;
+  background-color: #242424;
 }
 hr.dark-nav {
   border-color: white;
+  border-color: rgb(255, 80, 80);
 }
 .fab.dark-nav {
   color: white;
+  color: rgb(255, 80, 80);
 }
 .Join.dark-nav {
-  color: rgb(19, 19, 19);
+  color: rgb(228, 228, 228);
 }
 .intro.dark-intro {
-  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(85, 195, 255));
+  background: linear-gradient(90deg, rgb(255, 85, 85), rgb(85, 195, 255));
 }
 .home.dark-textintro {
   color: white;
@@ -228,12 +236,14 @@ hr.dark-nav {
 #main.dark-main {
   background: linear-gradient(black, rgb(52, 52, 52));
   color: white;
+  background: rgb(255, 255, 255);
+  color: black;
 }
-.dark-fots {
-  color: rgb(255, 255, 255);
+.fot.dark-fots {
+  color: rgb(0, 0, 0);
 }
 footer.dark-fot {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 .main-about {
   width: 100%;
@@ -288,20 +298,22 @@ footer {
   align-items: center;
   justify-content: space-around;
   height: 20vh;
+  background-color: black;
 }
 .fot {
   font-size: 1rem;
   font-weight: lighter;
   margin: 0;
+  color: white;
 }
 .icon-fot {
   margin: 0.8rem;
 }
 .icon-fot .fab {
-  color: black;
+  color: white;
 }
 .icon-fot.fot.dark-fots .fab {
-  color: white;
+  color: black;
 }
 .icon-fot.fot.dark-fots .fab.fab.fa-linkedin:hover {
   color: rgb(104, 163, 231);
@@ -347,9 +359,10 @@ footer {
   flex-direction: row;
   padding: 1rem;
   border-top: solid 1px black;
+  color: white;
 }
 .proj.dark-textend {
-  color: white;
+  color: black;
 }
 .proj div {
   width: 50%;
@@ -377,24 +390,24 @@ footer {
 .A-btn {
   color: rgb(228, 228, 228);
   text-decoration: none;
-  background-color: rgb(255, 80, 80);
   border-radius: 1rem;
   padding: 0.5rem;
   text-align: center;
   font-weight: bold;
   font-size: 0.8rem;
+  background-color: rgb(85, 195, 255);
 }
 .A-btn.dark-A {
   color: rgb(228, 228, 228);
-  background-color: rgb(85, 195, 255);
+  background-color: rgb(255, 80, 80);
 }
 .A-btn.dark-A:hover {
-  color: rgb(228, 228, 228);
-  background-color: rgb(42, 150, 208);
+  background-color: rgb(255, 95, 95);
 }
 .A-btn:hover {
   cursor: pointer;
-  background-color: rgb(255, 95, 95);
+  color: rgb(228, 228, 228);
+  background-color: rgb(42, 150, 208);
 }
 
 /* Animation fadein elements */
