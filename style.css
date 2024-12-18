@@ -8,6 +8,20 @@ html {
   scroll-behavior: smooth;
 }
 
+/* För WebKit-baserade webbläsare */
+::-webkit-scrollbar {
+  width: 5px; /* Gör scrollbar tunn */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Gör thumb halvgenomskinlig */
+  border-radius: 10px; /* Rundar hörnen */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Gör bakgrunden osynlig */
+}
+
 header {
   height: 60px;
   background-color: rgb(255, 255, 255);
