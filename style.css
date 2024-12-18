@@ -11,10 +11,11 @@ html {
 /* För WebKit-baserade webbläsare */
 ::-webkit-scrollbar {
   width: 5px; /* Gör scrollbar tunn */
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2); /* Gör thumb halvgenomskinlig */
+  background-color: black; /* Gör thumb halvgenomskinlig */
   border-radius: 10px; /* Rundar hörnen */
 }
 
