@@ -282,11 +282,10 @@ footer.dark-fot {
   height: 35%;
   display: flex;
   align-items: center;
-  padding: 3rem;
-  padding-right: 12rem;
+  padding: 8rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .main-skill div {
   display: flex;
@@ -480,8 +479,9 @@ footer {
   .intro p {
     font-size: 2rem;
   }
-  .main-skill {
-    padding-left: 2rem;
+  .img-box{
+    width: 500px;
+    height: 500px;
   }
 }
 @media (max-width: 1190px) {
@@ -506,6 +506,9 @@ footer {
     padding-left: 12rem;
     padding-right: 12rem;
   }
+  .main-about{
+    padding: 3rem;
+  }
 }
 @media (max-width: 990px) {
   .paragraf-intro {
@@ -516,7 +519,7 @@ footer {
     padding: 3rem;
   }
   .main-about {
-    padding: 4rem;
+    padding: 2rem;
   }
   .main-skill {
     padding: 2rem;
@@ -553,10 +556,10 @@ footer {
 }
 @media (max-width: 750px) {
   .about-text {
-    padding: 2rem;
+    padding: 3rem;
   }
   .main-about {
-    padding: 2rem;
+    padding: 1rem;
   }
   .main-skill {
     padding: 1rem;
@@ -587,7 +590,7 @@ footer {
     padding: 1rem;
   }
   .main-skill {
-    padding: 1.75rem;
+    padding: 1rem;
     padding-right: 4rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -679,3 +682,4 @@ footer {
     padding: 2rem;
   }
 }
+
